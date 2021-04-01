@@ -1,0 +1,69 @@
+{
+    "manifestVersion": 1,
+    "id": "datadogscheduledowntime",
+    "name": "Datadog Schedule a downtime",
+    "version": "1.0.0",
+    "publisher": "LucianoReichertEger",
+    "public": false,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "An extension to Schedule Downtime to Datadog.",
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "files": [
+        {
+            "path": "tasks/datadogscheduledowntime"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "datadogscheduledowntime",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "tasks/datadogscheduledowntime"
+            }
+        }
+    ],
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "Continuous Integration",
+        "Continuous Delivery",
+        "Build",
+        "Release",
+        "Datadog"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "license.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "https://github.com/lucianoeger/datadogscheduledowntime"
+        },
+        "issues": {
+            "uri": "https://github.com/lucianoeger/datadogscheduledowntime/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/lucianoeger/datadogscheduledowntime"
+    },
+    "screenshots": [
+        {
+            "path": "tasks/datadogscheduledowntime/screenshots/task.png"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "datadogscheduledowntime",
+  "version": "1.0.0",
+  "description": "An extension to Schedule Downtime to Datadog.",
+  "main": "index.js",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.9.3",
+    "moment-timezone": "^0.5.33"
+  },
+  "devDependencies": {
+    "@types/ncp": "^2.0.3",
+    "@types/node": "^10.17.18",
+    "@types/q": "^1.5.2",
+    "ncp": "^2.0.0",
+    "rimraf": "^2.7.1",
+    "typescript": "^3.8.3",
+    "vsts-task-lib": "^2.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "node build/clean.js",
+    "build": "npm run-script clean && tsc && node build/build.js",
+    "package": "npm run-script build && tfx extension create --root dist --output-path dist"
+  },
+  "keywords": [],
+  "author": "Luciano Reichert Eger",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucianoeger/datadogscheduledowntime.git"
+  }
+}

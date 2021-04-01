@@ -1,0 +1,21 @@
+{
+  "name": "datadogscheduledowntime",
+  "version": "1.0.0",
+  "description": "An extension to Schedule Downtime to Datadog.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "azure-pipelines-task-lib": "^2.9.3",
+    "vsts-task-lib": "^2.6.1",
+    "moment-timezone": "^0.5.33"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucianoeger/datadogscheduledowntime.git"
+  }
+}
