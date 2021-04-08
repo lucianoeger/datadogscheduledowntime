@@ -29,8 +29,8 @@ async function run() {
         },
         data: {
             monitor_id: MONITOR_ID,
-            monitor_tags: MONITOR_TAGS !== undefined ? MONITOR_TAGS.split(',') : null,
-            scope: GROUP_SCOPE.split(','),
+            monitor_tags: MONITOR_TAGS !== undefined ? MONITOR_TAGS.split(',') : [],
+            scope: GROUP_SCOPE !== undefined ? GROUP_SCOPE.split(',') : [],
             start: START === "" ? null : parseInt(START),
             end: END === "" ? null : parseInt(END),
             timezone: TIME_ZONE,
