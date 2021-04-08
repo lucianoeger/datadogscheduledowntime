@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
-    "id": "8a78eb22-4a8f-4b6a-a8c8-115201498967",
+    "id": "18640aa5-f942-4487-877b-21cd3615fe4e",
     "name": "DatadogScheduleDowntime",
     "friendlyName": "Datadog Schedule a downtime",
     "description": "Schedule a downtime",

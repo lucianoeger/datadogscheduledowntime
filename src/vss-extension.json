@@ -4,7 +4,7 @@
     "name": "Datadog Schedule a downtime",
     "version": "1.0.0",
     "publisher": "LucianoReichertEger",
-    "public": false,
+    "public": true,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
